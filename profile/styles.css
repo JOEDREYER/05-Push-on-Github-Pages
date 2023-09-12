@@ -1,5 +1,5 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
 
@@ -72,7 +72,7 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(15deg);
+  transform: scale(1.2) rotate(360deg);
 
   @for $num from 1 through 8 {
     .circle:nth-child(#{$num}) {
@@ -80,7 +80,7 @@ header .profile-image:hover {
       animation-delay: $num * .1s;
     }
   }
-  
+
   @keyframes move-the-circle {
     0% {
       transform: translate(0, 0);
@@ -101,7 +101,7 @@ header .profile-image:hover {
   border-radius: 25px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
   color: white;
@@ -181,7 +181,7 @@ a.social {
   opacity: .5;
   transition: all .25s;
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
 }
 a.facebook {
   background-image: url("images/facebook.png");
@@ -201,7 +201,7 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: flex;
       max-width: 1200px;
